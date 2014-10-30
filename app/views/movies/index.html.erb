@@ -2,6 +2,6 @@
 <%= link_to "Add a Movie", new_movie_path %>
 <hr>
 <% @movies.each do |movie| %>
-  <%= "I gave the movie #{movie.title} a rating of #{movie.rating}." %>
+  <p>I gave the movie <%= link_to movie.title, movie_path(movie) %> a rating of <%= movie.rating %>.</p>
   <hr>
 <% end %>

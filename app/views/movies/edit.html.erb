@@ -1,0 +1,13 @@
+Edit this movie because I totally changed my mind.
+
+<%= form_for @movie do |f| %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :rating %>
+  <%= f.text_field :rating %>
+
+  <%= f.submit %>
+
+<% end %>
