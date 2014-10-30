@@ -11,3 +11,6 @@ Edit this movie because I totally changed my mind.
   <%= f.submit %>
 
 <% end %>
+
+<%= link_to "I want to forget this movie ever existed",
+ movie_path(@movie), :method => :delete %>
